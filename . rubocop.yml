@@ -1,0 +1,13 @@
+inherit_from:
+  - https://raw.githubusercontent.com/Shop-Circle/style-guides/master/rubocop/.rubocop-standard.yml
+  - https://raw.githubusercontent.com/Shop-Circle/style-guides/master/rubocop/.rubocop-rails.yml
+  - https://raw.githubusercontent.com/Shop-Circle/style-guides/master/rubocop/.rubocop-thread_safety.yml
+
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-thread_safety
